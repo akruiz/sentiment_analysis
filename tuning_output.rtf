@@ -1,0 +1,192 @@
+{\rtf1\ansi\ansicpg1252\cocoartf2758
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fswiss\fcharset0 Helvetica;}
+{\colortbl;\red255\green255\blue255;}
+{\*\expandedcolortbl;;}
+\margl1440\margr1440\vieww11520\viewh8400\viewkind0
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+
+\f0\fs24 \cf0 Loading preprocessed review data...\
+Extracting review IDs, texts, and sentiment scores...\
+Splitting data into training and testing sets...\
+Converting review texts into numerical features using TF-IDF...\
+\
+Example of review text conversion to numerical features using TF-IDF:\
+Review Text: could give zero star would . bought puppy petland virginia , experience wonderful . still awesome dog . went look puppy yesterday petland largo , fl awful experience . puppy back glass crate usual none breed listed , ask covid time . ask price , get speel , case , know price . get . get later see puppy etc . fast forward , see puppy listen guy 's long presentation laptop including video . ridiculous really . finally got price hour later insistent . want close $ 10,000 golden doodle . outrageous ! ? ! ? feel sorry cute puppy . doubt anyone pay outrageous price puppy sit crated . ludicrous . petland ashamed . n't waste time going . buyer beware .\
+Numerical Features: [[0.         0.08474947 0.         ... 0.         0.         0.        ]]\
+\
+Review Text: friendly , great coffee , excellent music mix . good vibe around .\
+Numerical Features: [[0. 0. 0. ... 0. 0. 0.]]\
+\
+Review Text: $ 1 taco win ! ! bf got total 10 taco . like stick `` safe '' stuff like carne asada chicken , like stuff .. lengua , tripas . got lengua , buche , tripas , al pastor , something else . ca n't remember . sure , taco smaller , 're still really filling ! get sample different kind meat loved . really full 4 taco bf help 5th one . looking people 's food burrito huge ! looked pretty tasty . meal 2 $ 10 ... ca n't beat !\
+Numerical Features: [[0. 0. 0. ... 0. 0. 0.]]\
+\
+Performing hyperparameter tuning for Logistic Regression...\
+Fitting 5 folds for each of 10 candidates, totalling 50 fits\
+[CV] END ..................................C=1, solver=lbfgs; total time=16.3min\
+[CV] END ..................................C=1, solver=lbfgs; total time=14.1min\
+[CV] END ..................................C=1, solver=lbfgs; total time=17.1min\
+[CV] END ..................................C=1, solver=lbfgs; total time=17.8min\
+[CV] END ..................................C=1, solver=lbfgs; total time=14.0min\
+[CV] END .............................C=10, solver=newton-cg; total time=20.0min\
+[CV] END .............................C=10, solver=newton-cg; total time=20.0min\
+[CV] END .............................C=10, solver=newton-cg; total time=19.9min\
+[CV] END .............................C=10, solver=newton-cg; total time=20.2min\
+[CV] END .............................C=10, solver=newton-cg; total time=20.1min\
+[CV] END ............................C=100, solver=newton-cg; total time=38.8min\
+[CV] END ............................C=100, solver=newton-cg; total time=28.0min\
+[CV] END ............................C=100, solver=newton-cg; total time=22.5min\
+[CV] END ............................C=100, solver=newton-cg; total time=38.9min\
+[CV] END ............................C=100, solver=newton-cg; total time=38.2min\
+[CV] END ................................C=0.1, solver=lbfgs; total time= 5.5min\
+[CV] END ................................C=0.1, solver=lbfgs; total time= 9.5min\
+[CV] END ................................C=0.1, solver=lbfgs; total time= 8.7min\
+[CV] END ................................C=0.1, solver=lbfgs; total time= 9.0min\
+[CV] END ................................C=0.1, solver=lbfgs; total time= 9.6min\
+[CV] END ..............................C=1, solver=newton-cg; total time= 8.2min\
+[CV] END ..............................C=1, solver=newton-cg; total time= 8.1min\
+[CV] END ..............................C=1, solver=newton-cg; total time= 8.2min\
+[CV] END ..............................C=1, solver=newton-cg; total time= 8.0min\
+[CV] END ..............................C=1, solver=newton-cg; total time= 8.1min\
+[CV] END ...........................C=0.01, solver=newton-cg; total time= 1.7min\
+[CV] END ...........................C=0.01, solver=newton-cg; total time= 1.7min\
+[CV] END ...........................C=0.01, solver=newton-cg; total time= 1.7min\
+[CV] END ...........................C=0.01, solver=newton-cg; total time= 1.7min\
+[CV] END ...........................C=0.01, solver=newton-cg; total time= 1.7min\
+[CV] END ................................C=100, solver=lbfgs; total time=26.3min\
+[CV] END ................................C=100, solver=lbfgs; total time=31.0min\
+[CV] END ................................C=100, solver=lbfgs; total time=11.0min\
+[CV] END ................................C=100, solver=lbfgs; total time= 7.9min\
+[CV] END ................................C=100, solver=lbfgs; total time=22.4min\
+[CV] END ...........................C=0.01, solver=liblinear; total time= 3.4min\
+[CV] END ...........................C=0.01, solver=liblinear; total time= 3.4min\
+[CV] END ...........................C=0.01, solver=liblinear; total time= 3.2min\
+[CV] END ...........................C=0.01, solver=liblinear; total time= 3.4min\
+[CV] END ...........................C=0.01, solver=liblinear; total time= 3.4min\
+[CV] END ............................C=0.1, solver=newton-cg; total time= 3.2min\
+[CV] END ............................C=0.1, solver=newton-cg; total time= 3.1min\
+[CV] END ............................C=0.1, solver=newton-cg; total time= 3.2min\
+[CV] END ............................C=0.1, solver=newton-cg; total time= 3.3min\
+[CV] END ............................C=0.1, solver=newton-cg; total time= 3.2min\
+[CV] END .................................C=10, solver=lbfgs; total time=10.8min\
+[CV] END .................................C=10, solver=lbfgs; total time=10.9min\
+[CV] END .................................C=10, solver=lbfgs; total time=24.1min\
+[CV] END .................................C=10, solver=lbfgs; total time=16.6min\
+[CV] END .................................C=10, solver=lbfgs; total time=25.4min\
+Evaluating the best model on the test data...\
+Best parameters found by the hyperparameter tuning:\
+\{'solver': 'newton-cg', 'C': 1\}\
+\
+Example predictions of review sentiments:\
+Review ID: J5Q1gH4ACCj6CtQG7Yom7g\
+Review Text: went lunch found burger meh . obvious focus burger amount different random crap pile flavor meat . burger patty seemed steamed appeared preformed patty , contrary stated menu . get ground beef kroger make burger blow water .\
+Actual Stars: 2.0, Predicted Stars: 2.0\
+\
+Review ID: HlXP79ecTquSVXmjM10QxQ\
+Review Text: needed new tire wife 's car . special order next day , dropped morning work called hour later car ready . quick efficient , woman helped awesome .\
+Actual Stars: 5.0, Predicted Stars: 5.0\
+\
+Review ID: JBBULrjyGx6vHto2osk_CQ\
+Review Text: jim woltman work goleta honda 5 star ! ! knowledgeable , helpful , personable . fantastic job honda . thank jim ! ! ! thank honda fabulous employee !\
+Actual Stars: 5.0, Predicted Stars: 5.0\
+\
+Combining review IDs, actual sentiments, and predicted sentiments...\
+Saving the results to a JSON file...\
+Predicted sentiments saved to predicted_sentiments.json.\
+Evaluation metrics for the best Logistic Regression model:\
+Accuracy: 0.6972987252775759\
+Precision: 0.6747213058845006\
+Recall: 0.6972987252775759\
+F1 Score: 0.6810944416605277\
+Classification Report:\
+              precision    recall  f1-score   support\
+\
+           1       0.75      0.86      0.80    320514\
+           2       0.47      0.32      0.38    163308\
+           3       0.49      0.38      0.43    208037\
+           4       0.54      0.44      0.49    436351\
+           5       0.78      0.89      0.83    968874\
+\
+    accuracy                           0.70   2097084\
+   macro avg       0.61      0.58      0.59   2097084\
+weighted avg       0.67      0.70      0.68   2097084\
+\
+Example of incorrect predictions:\
+Review ID: xQVDB9xRdpLmPh9XMQ6Gvg\
+Review Text: nothing beat pizza beer book . place nail , eye towards sustainability always make feel good . specially brewed beer , handful craft beer tap satisfy almost taste . prefer deep dish , although accomplice like thin crust . usually mean leftover . wish appetizer adventurous , changed , guess n't mess success 're pizza place apply . wish delivered .\
+Actual Stars: 5.0, Predicted Stars: 4.0\
+\
+Review ID: -C5M96k8FOb036r5enr3EQ\
+Review Text: went mom couple week ago . recently went gluten-free , sweet christine 's nearby life saver ! donut blondie muffin ( n't judge ! ) . donut n't worth . small , awkwardly sweet , weirdly textured .. n't need life . would n't get . muffin essentially chocolate chip muffin . best muffin 've ever life . granted , n't muffin two month , love muffin , gluten free option like sign god care u gluten intolerant folk , . wo n't able go back july , , 'm stocking . n't care price . muffin best .\
+Actual Stars: 4.0, Predicted Stars: 5.0\
+\
+Review ID: v_Zb_Sd5neHK4SHe603fzg\
+Review Text: castle hands-down one favourite midnight institutions/bars/clubs . everyone thing n't give damn think ( best way possible ) . people dressed impress , 're also fun . 'm usually monday thursday night kinda guy , preferring new wave/indie/pop music harder gothic/industrial music play night . somehow still cobweb corset fake fang , 's plethora night . best memory dancing hard hundred stranger surrounding , puddle sweat foot , massive cheer wee hour morning light flick kick everyone . staff/bartenders/dancers seem take seriously , preventing place five star probably deserves , 's hit miss 've met fabulous people working castle year . time keep marching , inside castle 's strange phantasmagorical atmosphere old punk goth , 90 subculture , hipster , sexual deviant , local celebrity ( senator peter pan ! ) everything , marching beat drum . rock , castle .\
+Actual Stars: 4.0, Predicted Stars: 5.0\
+\
+Top 10 features contributing to 1.0 stars:\
+worst: 11.476300274154546\
+horrible: 8.431931743572797\
+terrible: 7.870201648026128\
+poisoning: 7.804522606220234\
+zero: 7.0481196146657625\
+disgusting: 6.838213794814523\
+rude: 6.547855544077343\
+awful: 6.524650449350072\
+waste: 6.487190905242609\
+unprofessional: 6.327827382405655\
+\
+\
+Top 10 features contributing to 2.0 stars:\
+meh: 6.149455328080257\
+mediocre: 6.115388544061719\
+disappointing: 5.9285656688084245\
+worst: 5.846695560888756\
+bland: 5.782048603653103\
+flavorless: 5.128591618828045\
+underwhelmed: 4.96333745380962\
+underwhelming: 4.834486470257119\
+downhill: 4.810852785546638\
+unimpressed: 4.748278684707519\
+\
+\
+Top 10 features contributing to 3.0 stars:\
+ok: 5.3450024692147\
+okay: 4.90230434689087\
+3stars: 4.612114541339555\
+underwhelmed: 4.143962439057995\
+decent: 4.1352705236536\
+meh: 4.131111599374464\
+however: 4.012056577407177\
+alright: 3.924503253508748\
+average: 3.8725532684133888\
+conflicted: 3.8494154556260276\
+\
+\
+Top 10 features contributing to 4.0 stars:\
+delicious: 9.407597374027686\
+great: 7.302401357701273\
+excellent: 6.877335220505649\
+amazing: 6.001816672312465\
+perfect: 5.857125239507855\
+pleasantly: 5.595827106063413\
+downside: 5.589040727419717\
+fantastic: 5.531211674428105\
+awesome: 5.468166824257546\
+perfectly: 4.995481287048258\
+\
+\
+Top 10 features contributing to 5.0 stars:\
+amazing: 11.811459830235817\
+delicious: 11.757424857251225\
+excellent: 9.256484677297513\
+great: 9.020779879482067\
+perfect: 8.546312584653721\
+fantastic: 8.460920981833693\
+awesome: 8.400242485839497\
+best: 8.272101164606013\
+perfection: 7.945257728084533\
+phenomenal: 7.534363059857198\
+\
+\
+All tasks completed.\
+}
